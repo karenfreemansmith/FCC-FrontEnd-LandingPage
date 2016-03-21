@@ -1,4 +1,21 @@
 body {
-  color: #333399;
+  color: #3e3e28;
+  background: #f5f5ef;
   font-family: veranda;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  width: 50%; line-height: 2em;
+  text-align: center;
+  margin: auto; margin-bottom: 5px;
+  border-style: solid;
+  background: #e6b800;
+}
+
+a {
+  text-decoration: none; color: #3e3e28;
 }
