@@ -1,11 +1,12 @@
 body {
   color: #3e3e28;
-  background: #f5f5ef;
+  background: #e9e9e9;
   font-family: veranda;
 }
 
 h1 {
   text-align: center;
+  margin: 0px;
 }
 
 h2 {
@@ -13,9 +14,9 @@ h2 {
   text-align: center;
   margin: auto; margin-bottom: 5px;
   border-style: solid;
-  background: #e6b800;
 }
 
 a {
-  text-decoration: none; color: #3e3e28;
+  text-decoration: none; 
+  color: #3e3e28;
 }
