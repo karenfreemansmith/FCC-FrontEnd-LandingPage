@@ -1,4 +1,4 @@
-# :boom: [My Portfolio](http://karenfreemansmith.github.io/) :sparkles:
+# :boom: [Main Home Page](http://karenfreemansmith.github.io/) :sparkles::sparkles::sparkles:
 ![project screenshot](/img/screenshot.jpg)
 
 __Version 1: March 21, 2016__
@@ -6,8 +6,6 @@ __Version 1: March 21, 2016__
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
 ### Description
-__*Main GitHub Page*__
-
 Page links to main websites and pages.
 
 ### Setup/Installation
