@@ -15,15 +15,17 @@ Page links to main websites and pages.
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-* nee some kind of mouseover effect on buttons
+<<<<<<< HEAD
+* need some kind of mouseover effect on buttons
 * non-GitHub links
   * profile on Treehouse.com
   * profile on freebootcamp.com
   * linkedin/facebook?/twitter? etc.
   * live websites - or include them in portfolio?
+* Bootstrap-theme is not linked in index.html, add link if needed for project
 
 ### Technologies Used
-###### HTML, CSS, Bootstrap
+###### HTML, CSS, Bootstrap, JavaScript, jQuery
 
 ### Legal
 *Licensed under the GNU General Public License v3.0*
