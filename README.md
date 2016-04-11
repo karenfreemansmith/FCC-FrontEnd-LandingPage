@@ -1,7 +1,7 @@
 # :boom: [Main Home Page](http://karenfreemansmith.github.io/) :sparkles::sparkles::sparkles:
 ![project screenshot](/img/screenshot.jpg)
 
-__Version 1: March 21, 2016__
+__Version 2: April 10, 2016__
 
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
@@ -15,14 +15,7 @@ Page links to main websites and pages.
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-<<<<<<< HEAD
-* need some kind of mouseover effect on buttons
-* non-GitHub links
-  * profile on Treehouse.com
-  * profile on freebootcamp.com
-  * linkedin/facebook?/twitter? etc.
-  * live websites - or include them in portfolio?
-* Bootstrap-theme is not linked in index.html, add link if needed for project
+* Looks funny at wider "extra small" size before it hits breakpoint for "small"
 
 ### Technologies Used
 ###### HTML, CSS, Bootstrap, JavaScript, jQuery
