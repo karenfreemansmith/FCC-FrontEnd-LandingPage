@@ -1,28 +1,72 @@
 body {
-  color: #3e3e28;
-  background: #e9e9e9;
-}
-
-h1 {
-  text-align: center;
-  width: 100%;
-}
-
-h2 {
-  width: 100%; line-height: 2em;
-  text-align: center;
+  background-color: #786721;
+  width: 90%;
   margin: auto;
-  margin-top: 5px;
-  border-style: solid;
+  color: #786721;
 }
 
-a  {
+a, a:hover {
+  color: #786721;
   text-decoration: none;
-  color: #3e3e28;
 }
 
-a:hover  {
-  text-decoration: none;
-  opacity: .5;
-  color: #3e3e28;
+p {
+  margin-bottom: 15px;
+}
+
+h1 img {
+  width:100%;
+  max-width: 640px;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: black;
+  opacity: .8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #D3BC5F;
+  opacity: .8;
+  color: #black;
+  margin: 5px;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.center {
+  text-align: center;
+}
+.resume {
+  color:black;
+  display: none;
+}
+.portfolio {
+  color:black;
+  display: none;
+}
+.about {
+  color:black;
+  display: none;
+}
+.social {
+  color:black;
+  display: none;
+}
+.publication {
+  color: black;
+  display: none;
+}
+.contact {
+  color:black;
+  text-align: center;
+  display: none;
+}
+.copy {
+  color:black;
+  text-align: right;
 }
