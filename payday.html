@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Johnathan's Chores</title>
+<style>
+	body {	margin: auto;
+		width: 70%;}
+
+</style>
+</head>
+<body>
+<h1 id="pay">This Week's Pay = $</h1>
+
+<form id="frm1"><input type="checkbox" value="0" onclick="checkAll(this)">(Un)Check All<table>
+<tr><td></td><td>MON</td><td>TUE</td><td>WED</td><td>THU</td><td>FRI</td><td>SAT</td><td>SUN</td></tr>
+<tr><td>Make Bed: </td><td><input type="checkbox" name="mon_bed" value=".1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_bed" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_bed" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_bed" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_bed" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_bed" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_bed" value=".05" onclick="calculatePay()"></td></tr>
+
+<tr><td>Feed Cat: </td><td><input type="checkbox" name="mon_cat" value=".1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_cat" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_cat" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_cat" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_cat" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_cat" value=".05" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_cat" value=".05" onclick="calculatePay()"></td></tr>
+
+<tr><td>Shower: </td><td>
+<input type="checkbox" name="mon_shower" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_shower" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_shower" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_shower" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_shower" value=".50" onclick="calculatePay()"></td><td></tr>
+
+<tr><td>Comb Hair: </td><td>
+<input type="checkbox" name="mon_hair" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_hair" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_hair" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_hair" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_hair" value=".25" onclick="calculatePay()"></td></tr>
+
+<tr><td>Brush Teeth: </td><td>
+<input type="checkbox" name="mon_teeth" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_teeth" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_teeth" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_teeth" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_teeth" value=".25" onclick="calculatePay()"></td></tr>
+
+<tr><td>Deodorant: </td><td>
+<input type="checkbox" name="mon_deodorant" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_deodorant" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_deodorant" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_deodorant" value=".25" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_deodorant" value=".25" onclick="calculatePay()"></td></tr>
+
+<tr><td>Clean Clothes: </td><td>
+<input type="checkbox" name="mon_clothes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_clothes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_clothes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_clothes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_clothes" value=".50" onclick="calculatePay()"></td></tr>
+
+<tr><td>School: </td><td>
+<input type="checkbox" name="mon_school" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_school" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_school" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_school" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_school" value="1" onclick="calculatePay()"></td></tr>
+
+<tr><td>Homework: </td><td>
+<input type="checkbox" name="mon_homework" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_homework" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_homework" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_homework" value="1" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_homework" value="1" onclick="calculatePay()"></td></tr>
+
+<tr><td>Tell Mom about Your Day: </td><td>
+<input type="checkbox" name="mon_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_call" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_call" value="2" onclick="calculatePay()"></td></tr>
+
+<tr><td>Log Your Meals: </td><td>
+<input type="checkbox" name="mon_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_meals" value="2" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_meals" value="2" onclick="calculatePay()"></td></tr>
+
+<tr><td>Clean Bathroom: 
+</td>
+<td><input type="checkbox" name="bathroom" value="5" onclick="calculatePay()"></td>
+<td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+<tr><td>Clean Kitchen: 
+</td><td></td>
+<td><input type="checkbox" name="kitchen" value="5" onclick="calculatePay()"></td>
+<td></td><td></td><td></td><td></td><td></td></tr>
+
+<tr><td>Sweep Floors: 
+</td><td></td><td></td>
+<td><input type="checkbox" name="floors" value="5" onclick="calculatePay()"></td>
+<td></td><td></td><td></td><td></td></tr>
+
+<tr><td>Trash: 
+</td><td></td><td></td><td></td>
+<td><input type="checkbox" name="trash" value="5" onclick="calculatePay()"></td>
+<td></td><td></td><td></td></tr>
+
+<tr><td>Catbox: 
+</td><td></td><td></td><td></td><td></td>
+<td><input type="checkbox" name="catbox" value="5" onclick="calculatePay()"></td>
+<td></td><td></td></tr>
+
+<tr><td>Shopping: 
+</td><td></td><td></td><td></td><td></td><td></td>
+<td><input type="checkbox" name="shopping" value="5" onclick="calculatePay()"></td>
+<td></td></tr>
+
+<tr><td>Laundry: 
+</td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><input type="checkbox" name="laundry" value="5" onclick="calculatePay()"></td>
+</tr>
+
+
+
+<tr><td>Dishes: </td><td>
+<input type="checkbox" name="mon_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_dishes" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_dishes" value=".50" onclick="calculatePay()"></td></tr>
+
+<tr><td>Declutter: </td><td>
+<input type="checkbox" name="mon_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="tue_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="wed_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="thu_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="fri_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sat_clutter" value=".50" onclick="calculatePay()"></td><td>
+<input type="checkbox" name="sun_clutter" value=".50" onclick="calculatePay()"></td></tr>
+</table>
+</form> 
+
+
+
+
+<script>
+function calculatePay() {
+    var x = document.getElementById("frm1");
+    var pay = 0;
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        if (x.elements[i].checked) pay += parseFloat(x.elements[i].value);
+    }
+    document.getElementById("pay").innerHTML = "This Week's Pay = $" + pay.toFixed(2);
+}
+</script>
+
+<script language="JavaScript">
+function checkAll(bx) {
+  var cbs = document.getElementsByTagName('input');
+  for(var i=0; i < cbs.length; i++) {
+    if(cbs[i].type == 'checkbox') {
+      cbs[i].checked = bx.checked;
+    }
+  }
+  calculatePay();
+}
+</script>
+
+</body>
+</html>
+
